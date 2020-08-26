@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+body {
+   font-family: 'Quicksand', sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+
+header {
+   display: inline;
+}
+
+main {
+   padding: 20px;
+   overflow: auto;
+}
+
+#content {
+   float: left;
+   width: 75%;
+}
+
+
+.navbar {
+   text-align: left;
+}
+
+nav {
+   background-color: green;
+   padding: 5px;
+   position: sticky;
+   top: 0;
+}
+
+nav a {
+   font-size: 18px;
+   font-weight: 400;
+   text-decoration: none;
+   color: white;
+}
+
+nav a:hover {
+   font-weight: bold;
+}
+
+nav li {
+   display: inline;
+   list-style-type: none;
+   margin-right: 20px;
+}
+
+h2,
+h3 {
+   color: #087532
+}
+
+.profile header {
+   text-align: center;
+
+}
+
+.profile img {
+   width: 200px;
+}
+
+.featured-image {
+   width: 100%;
+   max-height: 300px;
+   object-fit: cover;
+   object-position: center;
+}
+
+.card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.jumbotron {
+   font-size: 20px;
+   padding: 20px;
+   background-color: rgb(141, 111, 175);
+   text-align: center;
+   color: rgb(28, 238, 0);
+}
+
+aside {
+   float: right;
+   width: 25%;
+   padding-left: 20px;
+   text-align: center;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+footer {
+   padding: 10px;
+   color: white;
+   background-color: green;
+   text-align: center;
+   font-weight: bold;
+}
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: green;
+}
+
+/* Float the list items side by side */
+ul.topnav li {
+   float: left;
+}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+   display: inline-block;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   transition: 0.3s;
+   font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {
+   background-color: greenyellow;
+}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {
+   display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+
+   #content,
+   aside {
+      width: 100%;
+      padding: 0;
+   }
+}
+
+/* Saat lebar layar kurang dari 680 pixel, sembunyikan semua menu item kecuali item yang pertama yaitu("Home"). Tampilkan juga list item yang berisi link untuk membuka menu yaitu (li.icon) */
+@media screen and (max-width:680px) {
+   ul.topnav li:not(:first-child) {
+      display: none;
+   }
+
+   ul.topnav li.icon {
+      float: right;
+      display: inline-block;
+   }
+}
+
+/* Class dengan nama "responsive" akan ditambahkan oleh JavaScript saat user mengklik icon. Munculnya Class ini akan mendisplay isi list menu 
+ */
+@media screen and (max-width:680px) {
+   ul.topnav.responsive {
+      position: relative;
+   }
+
+   ul.topnav.responsive li.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+   }
+
+   ul.topnav.responsive li {
+      float: none;
+      display: inline;
+   }
+
+   ul.topnav.responsive li a {
+      display: block;
+      text-align: left;
+   }
+}

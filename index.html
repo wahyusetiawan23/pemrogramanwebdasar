@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Website</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="jumbotron">
+            <style>
+                .jumbotron {
+                    background-image: url(assets/image/laut1.jpg);
+                    background-position: 0vmax;
+                }
+            </style>
+            <img src="assets/image/logo.png">
+            <b>
+                <p>PERSIS MANTANKU</p>
+            </b>
+            <p>Perancangan Sistem Informasi Pendaftaran Nikah KUA</p>
+        </div>
+        <nav>
+            <ul class="topnav">
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#persyaratan">Persyaratan</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+                <li class="icon">
+                    <a href="javascript:void(0);" onclick="myFunction()">☰</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="content">
+            <article class="card" id="tentang">
+                <h2>Tentang</h2>
+                <img src="assets/image/nikah.png" class="featured-image" alt="sejarah">
+                <h2>Hadist Tentang Nikah</h2>
+                <p>“Wahai para pemuda! Barangsiapa di antara kalian berkemampuan untuk menikah, maka menikahlah, karena
+                    nikah itu lebih menundukkan pandangan, dan lebih membentengi farji (kemaluan). Dan barangsiapa yang
+                    tidak mampu, maka hendaklah ia shaum (puasa), karena shaum itu dapat membentengi dirinya.” (HR
+                    Bukhari, Muslim, Tirmidzi, dan lainnya).</p>
+            </article>
+
+            <article class="card" id="persyaratan">
+                <h2>Persyaratan</h2>
+                <img src="assets/image/persyaratan.png" class=" featured-image" alt="persyaratan">
+            </article>
+
+            <article class="card" id="kontak">
+                <h2>Kontak</h2>
+                <img src="assets/image/kontak.png" class="featured-image" alt="farm house">
+            </article>
+        </div>
+        <aside>
+            <article class="profile card" class="profile">
+                <header>
+                    <h2>Biodata</h2>
+                    <figure>
+                        <img src="assets/image/3x4.jpg">
+                        <figcaption>Pas Foto</figcaption>
+                    </figure>
+                </header>
+                <section>
+                    <h3>Data Diri</h3>
+                    <table>
+                        <tr>
+                            <th>Nama</th>
+                            <td>Wahyu Setiawan</td>
+                        </tr>
+                        <tr>
+                            <th>Alamat</th>
+                            <td>Indramayu</td>
+                        </tr>
+                        <tr>
+                            <th>Tanggal Lahir</th>
+                            <td>23 Februari 1996</td>
+                        </tr>
+                        <tr>
+                            <th>Status</th>
+                            <td>Mahasiswa UBSI Cikampek</td>
+                        </tr>
+                        <tr>
+                            <th>No Telepon</th>
+                            <td>+62838-1586-0543</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+        </aside>
+    </main>
+    <footer>
+        <p>Belajar Dasar Pemrograman Web &#169; 2020, Wahyu Setiawan</p>
+    </footer>
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+            document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+        }
+    </script>
+</body>
+
+</html>
